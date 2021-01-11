@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiplication_level_nav"
+    app:startDestination="@id/first_multiplication_level">
+
+    <fragment
+        android:id="@+id/first_multiplication_level"
+        android:name="com.example.multiplicationstages.FragmentFirstMultiplicationLevel"
+        android:label="fragment_first_multiplication_stage"
+        tools:layout="@layout/fragment_first_multiplication_level" >
+        <action
+            android:id="@+id/navigate_to_results_fragment"
+            app:destination="@id/level_results" />
+    </fragment>
+    <fragment
+        android:id="@+id/level_results"
+        android:name="com.example.multiplicationstages.FragmentShowResults"
+        android:label="fragment_first_multiplication_level"
+        tools:layout="@layout/fragment_level_results" >
+        <action
+            android:id="@+id/navigate_to_second_level"
+            app:destination="@id/fragmentSecondMultiplicationLevel" />
+        <action
+            android:id="@+id/navigate_to_first_level"
+            app:destination="@id/first_multiplication_level" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSecondMultiplicationLevel"
+        android:name="com.example.multiplicationstages.FragmentSecondMultiplicationLevel"
+        android:label="fragment_first_multiplication_level"
+        tools:layout="@layout/fragment_first_multiplication_level" >
+        <action
+            android:id="@+id/navigate_to_results_fragment"
+            app:destination="@id/level_results" />
+    </fragment>
+</navigation>

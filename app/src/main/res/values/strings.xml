@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Multiplication Stages</string>
+    <string name="level">Level %d</string>
+    <string name="level_results">Results for level %d</string>
+    <string name="time_alert">%d remaining</string>
+    <string name="multiplication_expression">%1$d x %2$d</string>
+    <string name="progress_indicator">%d of 10</string>
+    <string name="submit_answer">Submit</string>
+    <string name="try_again">Try Again</string>
+    <string name="next_level">Proceed</string>
+    <string name="percentage_scored">Percentage scored : %s</string>
+    <string name="alert_message">You need at least 90 percent to proceed to the next level.</string>
+    <string name="congratulation">Congratulations!! You have passed this level. You can go ahead and attempt the next level.</string>
+    <string name="attempts_left">You have %d attempts left otherwise you will have to go to start again to the previous level.</string>
+    <string name="levels_finished">Congratulations!! You have successfully finished all the level</string>
+    <string name="previous_level">Unfortunately, you have exhausted your attempts. You need to go back to the previous level</string>
+    <string name="start_over">Start Over</string>
+</resources>

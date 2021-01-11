@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/level"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/show_time_remaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time_alert"
+                android:textSize="25sp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:textColor="@color/MediumBlue"/>
+
+            <TextView
+                android:id="@+id/show_expression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplication_expression"
+                android:textSize="35sp"
+                android:layout_marginTop="70dp"
+                android:textAlignment="center"
+                android:textColor="@color/MediumBlue"/>
+
+            <EditText
+                android:id="@+id/user_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/submit_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_answer"
+                android:textAllCaps="false"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/show_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/progress_indicator"
+                android:textSize="35sp"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:textColor="@color/MediumBlue"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
