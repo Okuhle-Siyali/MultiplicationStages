@@ -41,7 +41,7 @@ class FragmentFirstMultiplicationLevel : Fragment() {
                 Session.correctAnswers = presenter.correctAnswer
                 Session.fragmentIdentifier = 1
                 presenter.attempts = 1
-                Navigation.findNavController(binding.root).navigate(R.id.navigate_to_results_fragment)
+                Navigation.findNavController(it).navigate(R.id.navigate_to_results_fragment)
                 return@setOnClickListener
             }
             binding.showProgress.text = resources.getString(R.string.progress_indicator, presenter.attempts)
